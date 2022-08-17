@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let vc = CodeSnap2ViewController() // 인스턴스 생성
+        let vc = CodeProfileViewController() // 인스턴스 생성
         vc.modalPresentationStyle = .overFullScreen
         present(vc, animated: true) // 보여주기
         
