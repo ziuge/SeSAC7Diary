@@ -33,25 +33,35 @@
                                     <constraint firstAttribute="height" constant="5" id="uOe-5X-XZO"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jen-xa-emy">
+                                <rect key="frame" x="334" y="74" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Kmn-vy-jku"/>
+                                    <constraint firstAttribute="height" constant="50" id="TQF-p2-Zqm"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="nHq-Ow-I5M" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="2iR-2B-ohV"/>
+                            <constraint firstItem="jen-xa-emy" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="UTv-Mw-k5s"/>
                             <constraint firstItem="nHq-Ow-I5M" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="cQN-vR-xFf"/>
                             <constraint firstItem="TbA-iI-oBc" firstAttribute="top" secondItem="nHq-Ow-I5M" secondAttribute="bottom" constant="8" id="dFR-3r-e14"/>
                             <constraint firstItem="TbA-iI-oBc" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="iaN-Si-gbF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jen-xa-emy" secondAttribute="trailing" constant="30" id="q1L-qw-5yu"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nHq-Ow-I5M" secondAttribute="trailing" constant="30" id="wBg-Wb-PNl"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="blackView" destination="TbA-iI-oBc" id="LAg-Rd-Qoj"/>
+                        <outlet property="starImageView" destination="jen-xa-emy" id="2pF-3u-37t"/>
                         <outlet property="tutorialLabel" destination="nHq-Ow-I5M" id="2Vh-ZJ-D9A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="72" y="110"/>
+            <point key="canvasLocation" x="71.014492753623188" y="109.82142857142857"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="cYY-ag-0zh">

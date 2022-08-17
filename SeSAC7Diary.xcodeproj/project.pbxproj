@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE29866728AC71B800250CF0 /* CodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29866628AC71B800250CF0 /* CodeViewController.swift */; };
+		DE29866A28AC81B300250CF0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DE29866928AC81B300250CF0 /* SnapKit */; };
+		DE29866C28AC822900250CF0 /* CodeSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29866B28AC822900250CF0 /* CodeSnapViewController.swift */; };
+		DE29866E28AC8C0D00250CF0 /* CodeSnap2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29866D28AC8C0D00250CF0 /* CodeSnap2ViewController.swift */; };
 		DE3ACA7728AB1FD2009F079D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3ACA7628AB1FD2009F079D /* AppDelegate.swift */; };
 		DE3ACA7928AB1FD2009F079D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3ACA7828AB1FD2009F079D /* SceneDelegate.swift */; };
 		DE3ACA7B28AB1FD2009F079D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3ACA7A28AB1FD2009F079D /* ViewController.swift */; };
@@ -20,6 +24,7 @@
 		DE3ACAB628AB40C0009F079D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3ACAB528AB40C0009F079D /* SecondViewController.swift */; };
 		DE3ACAB828AB40CA009F079D /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3ACAB728AB40CA009F079D /* ThirdViewController.swift */; };
 		DE3ACABC28AB410D009F079D /* WalkThroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3ACABB28AB410D009F079D /* WalkThroughViewController.swift */; };
+		DED10E8728ACAACC00D9CEAA /* CodeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED10E8628ACAACC00D9CEAA /* CodeProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DE29866628AC71B800250CF0 /* CodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
+		DE29866B28AC822900250CF0 /* CodeSnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnapViewController.swift; sourceTree = "<group>"; };
+		DE29866D28AC8C0D00250CF0 /* CodeSnap2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnap2ViewController.swift; sourceTree = "<group>"; };
 		DE3ACA7328AB1FD2009F079D /* SeSAC7Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC7Diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3ACA7628AB1FD2009F079D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE3ACA7828AB1FD2009F079D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +76,7 @@
 		DE3ACAB528AB40C0009F079D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		DE3ACAB728AB40CA009F079D /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		DE3ACABB28AB410D009F079D /* WalkThroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughViewController.swift; sourceTree = "<group>"; };
+		DED10E8628ACAACC00D9CEAA /* CodeProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +85,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE3ACAA628AB2C6A009F079D /* SeSAC7UIFramework.framework in Frameworks */,
+				DE29866A28AC81B300250CF0 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE29866328AC719200250CF0 /* CodeBase */ = {
+			isa = PBXGroup;
+			children = (
+				DE29866628AC71B800250CF0 /* CodeViewController.swift */,
+				DE29866B28AC822900250CF0 /* CodeSnapViewController.swift */,
+				DE29866D28AC8C0D00250CF0 /* CodeSnap2ViewController.swift */,
+				DED10E8628ACAACC00D9CEAA /* CodeProfileViewController.swift */,
+			);
+			path = CodeBase;
+			sourceTree = "<group>";
+		};
 		DE3ACA6A28AB1FD2009F079D = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +124,7 @@
 		DE3ACA7528AB1FD2009F079D /* SeSAC7Diary */ = {
 			isa = PBXGroup;
 			children = (
+				DE29866328AC719200250CF0 /* CodeBase */,
 				DE3ACAAE28AB3AE2009F079D /* WalkThrough */,
 				DE3ACA7628AB1FD2009F079D /* AppDelegate.swift */,
 				DE3ACA7828AB1FD2009F079D /* SceneDelegate.swift */,
@@ -160,6 +182,9 @@
 			dependencies = (
 			);
 			name = SeSAC7Diary;
+			packageProductDependencies = (
+				DE29866928AC81B300250CF0 /* SnapKit */,
+			);
 			productName = SeSAC7Diary;
 			productReference = DE3ACA7328AB1FD2009F079D /* SeSAC7Diary.app */;
 			productType = "com.apple.product-type.application";
@@ -188,6 +213,9 @@
 				Base,
 			);
 			mainGroup = DE3ACA6A28AB1FD2009F079D;
+			packageReferences = (
+				DE29866828AC81B300250CF0 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = DE3ACA7428AB1FD2009F079D /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -239,11 +267,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DED10E8728ACAACC00D9CEAA /* CodeProfileViewController.swift in Sources */,
 				DE3ACA7B28AB1FD2009F079D /* ViewController.swift in Sources */,
 				DE3ACA7728AB1FD2009F079D /* AppDelegate.swift in Sources */,
+				DE29866E28AC8C0D00250CF0 /* CodeSnap2ViewController.swift in Sources */,
 				DE3ACA7928AB1FD2009F079D /* SceneDelegate.swift in Sources */,
 				DE3ACAB628AB40C0009F079D /* SecondViewController.swift in Sources */,
+				DE29866C28AC822900250CF0 /* CodeSnapViewController.swift in Sources */,
 				DE3ACAB828AB40CA009F079D /* ThirdViewController.swift in Sources */,
+				DE29866728AC71B800250CF0 /* CodeViewController.swift in Sources */,
 				DE3ACABC28AB410D009F079D /* WalkThroughViewController.swift in Sources */,
 				DE3ACAB428AB3B00009F079D /* FirstViewController.swift in Sources */,
 			);
@@ -461,6 +493,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE29866828AC81B300250CF0 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE29866928AC81B300250CF0 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE29866828AC81B300250CF0 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE3ACA6B28AB1FD2009F079D /* Project object */;
 }

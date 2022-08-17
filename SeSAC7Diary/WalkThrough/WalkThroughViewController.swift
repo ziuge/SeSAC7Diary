@@ -61,12 +61,13 @@ extension WalkThroughViewController: UIPageViewControllerDelegate, UIPageViewCon
     }
     
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
+        print("count", pageViewControllerList.count)
         return pageViewControllerList.count
     }
     
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
         guard let first = viewControllers?.first, let index = pageViewControllerList.firstIndex(of: first) else { return 0 }
-        
+        print("index", index)
         return index
     }
 }
