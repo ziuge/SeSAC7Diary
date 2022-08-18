@@ -60,7 +60,4 @@ class ProfileViewController: UIViewController {
         }
     }
     
-    
-    
-
 }

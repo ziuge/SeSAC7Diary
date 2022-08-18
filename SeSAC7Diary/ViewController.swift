@@ -23,8 +23,16 @@ class ViewController: UIViewController {
         
         view.backgroundColor = .yellow
 
-        configure()
-        nameButton.addTarget(self, action: #selector(nameButtonClicked), for: .touchUpInside)
+//        configure()
+//        nameButton.addTarget(self, action: #selector(nameButtonClicked), for: .touchUpInside)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let vc = CodeBaeminViewController() // 인스턴스 생성
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true) // 보여주기
     }
     
     @objc func nameButtonClicked() {
@@ -54,15 +62,8 @@ class ViewController: UIViewController {
 //    var testDic: Dictionary<Int, String> = [:]
 //    var testSet: Set = [2, 3, 4]
 //
-//
-    
-//
 //    override func viewDidAppear(_ animated: Bool) {
 //        super.viewDidAppear(animated)
-//
-//        let vc = CodeProfileViewController() // 인스턴스 생성
-//        vc.modalPresentationStyle = .overFullScreen
-//        present(vc, animated: true) // 보여주기
 //
 //
 //
@@ -78,6 +79,3 @@ class ViewController: UIViewController {
         
 //        let web = OpenWebView() // 클래스의 인스턴스 생성
 //        OpenWebView.presentWebViewController(self, url: "https://www.naver.com", transitionStyle: .present)
-        
-
-
