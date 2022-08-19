@@ -41,17 +41,36 @@ class CodeViewController: UIViewController {
         // (2) NSLayoutContraints 기반 (isActive)
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false // AutoResizingMask 적용되지 않도록! 둘은 충돌이 발생할 수 있기 때문에 하나는 켜 주고 하나는 꺼 주어야 함
         passwordTextField.backgroundColor = .lightGray
-//        let top = NSLayoutConstraint(item: passwordTextField, attribute: .top, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, attribute: .top, multiplier: 1, constant: 100)
-//        top.isActive = true // 레이아웃 활성화
-//        NSLayoutConstraint(item: passwordTextField, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: 50).isActive = true
-//        NSLayoutConstraint(item: passwordTextField, attribute: .trailing, relatedBy: .equal, toItem: emailTextField, attribute: .trailing, multiplier: 1, constant: 0).isActive = true
-//        NSLayoutConstraint(item: passwordTextField, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1, constant: 50).isActive = true
         
         // (3) NSLayoutConstraints (addConstraints)
-        let top = NSLayoutConstraint(item: passwordTextField, attribute: .top, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, attribute: .top, multiplier: 1, constant: 100)
-        let leading = NSLayoutConstraint(item: passwordTextField, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: 50)
-        let trailing = NSLayoutConstraint(item: passwordTextField, attribute: .trailing, relatedBy: .equal, toItem: emailTextField, attribute: .trailing, multiplier: 1, constant: 0)
-        let height = NSLayoutConstraint(item: passwordTextField, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1, constant: 50)
+        let top = NSLayoutConstraint(item: passwordTextField,
+                                     attribute: .top,
+                                     relatedBy: .equal,
+                                     toItem: view.safeAreaLayoutGuide,
+                                     attribute: .top,
+                                     multiplier: 1,
+                                     constant: 100)
+        let leading = NSLayoutConstraint(item: passwordTextField,
+                                         attribute: .leading,
+                                         relatedBy: .equal,
+                                         toItem: view,
+                                         attribute: .leading,
+                                         multiplier: 1,
+                                         constant: 50)
+        let trailing = NSLayoutConstraint(item: passwordTextField,
+                                          attribute: .trailing,
+                                          relatedBy: .equal,
+                                          toItem: emailTextField,
+                                          attribute: .trailing,
+                                          multiplier: 1,
+                                          constant: 0)
+        let height = NSLayoutConstraint(item: passwordTextField,
+                                        attribute: .height,
+                                        relatedBy: .equal,
+                                        toItem: nil,
+                                        attribute: .height,
+                                        multiplier: 1,
+                                        constant: 50)
         view.addConstraints([top, leading, trailing, height])
         
         // (4) NSLayoutAnchor

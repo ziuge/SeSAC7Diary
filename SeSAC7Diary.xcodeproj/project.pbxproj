@@ -25,6 +25,11 @@
 		DE3ACAB828AB40CA009F079D /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3ACAB728AB40CA009F079D /* ThirdViewController.swift */; };
 		DE3ACABC28AB410D009F079D /* WalkThroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3ACABB28AB410D009F079D /* WalkThroughViewController.swift */; };
 		DE531F9128ACFDE40051787D /* CodeBaeminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE531F9028ACFDE40051787D /* CodeBaeminViewController.swift */; };
+		DE72163D28AF1274004BAAD9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE72163C28AF1274004BAAD9 /* BaseViewController.swift */; };
+		DE72164028AF1447004BAAD9 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE72163F28AF1447004BAAD9 /* WriteViewController.swift */; };
+		DE72164228AF169E004BAAD9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE72164128AF169E004BAAD9 /* BaseView.swift */; };
+		DE72164428AF179B004BAAD9 /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE72164328AF179B004BAAD9 /* WriteView.swift */; };
+		DE72164628AF2CF4004BAAD9 /* BlackRadiusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE72164528AF2CF4004BAAD9 /* BlackRadiusTextField.swift */; };
 		DEC8405D28ADDF080072C13F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC8405C28ADDF080072C13F /* UIViewController+Extension.swift */; };
 		DEC8405F28ADE5FE0072C13F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC8405E28ADE5FE0072C13F /* ProfileViewController.swift */; };
 		DED10E8728ACAACC00D9CEAA /* CodeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED10E8628ACAACC00D9CEAA /* CodeProfileViewController.swift */; };
@@ -80,6 +85,11 @@
 		DE3ACAB728AB40CA009F079D /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		DE3ACABB28AB410D009F079D /* WalkThroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughViewController.swift; sourceTree = "<group>"; };
 		DE531F9028ACFDE40051787D /* CodeBaeminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBaeminViewController.swift; sourceTree = "<group>"; };
+		DE72163C28AF1274004BAAD9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DE72163F28AF1447004BAAD9 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
+		DE72164128AF169E004BAAD9 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		DE72164328AF179B004BAAD9 /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
+		DE72164528AF2CF4004BAAD9 /* BlackRadiusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackRadiusTextField.swift; sourceTree = "<group>"; };
 		DEC8405C28ADDF080072C13F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		DEC8405E28ADE5FE0072C13F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DED10E8628ACAACC00D9CEAA /* CodeProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeProfileViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +141,8 @@
 		DE3ACA7528AB1FD2009F079D /* SeSAC7Diary */ = {
 			isa = PBXGroup;
 			children = (
+				DE72163E28AF141E004BAAD9 /* Diary */,
+				DE72163928AF1258004BAAD9 /* Utility */,
 				DEC8405928ADDEF20072C13F /* Extension */,
 				DE29866328AC719200250CF0 /* CodeBase */,
 				DE3ACAAE28AB3AE2009F079D /* WalkThrough */,
@@ -172,6 +184,33 @@
 				DE3ACAB728AB40CA009F079D /* ThirdViewController.swift */,
 			);
 			path = WalkThrough;
+			sourceTree = "<group>";
+		};
+		DE72163928AF1258004BAAD9 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				DE72164728AF2D06004BAAD9 /* Custom */,
+				DE72163C28AF1274004BAAD9 /* BaseViewController.swift */,
+				DE72164128AF169E004BAAD9 /* BaseView.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		DE72163E28AF141E004BAAD9 /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				DE72163F28AF1447004BAAD9 /* WriteViewController.swift */,
+				DE72164328AF179B004BAAD9 /* WriteView.swift */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		DE72164728AF2D06004BAAD9 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				DE72164528AF2CF4004BAAD9 /* BlackRadiusTextField.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		DEC8405928ADDEF20072C13F /* Extension */ = {
@@ -286,10 +325,14 @@
 			files = (
 				DED10E8728ACAACC00D9CEAA /* CodeProfileViewController.swift in Sources */,
 				DEC8405D28ADDF080072C13F /* UIViewController+Extension.swift in Sources */,
+				DE72164428AF179B004BAAD9 /* WriteView.swift in Sources */,
 				DE3ACA7B28AB1FD2009F079D /* ViewController.swift in Sources */,
+				DE72164228AF169E004BAAD9 /* BaseView.swift in Sources */,
 				DE3ACA7728AB1FD2009F079D /* AppDelegate.swift in Sources */,
 				DEC8405F28ADE5FE0072C13F /* ProfileViewController.swift in Sources */,
+				DE72163D28AF1274004BAAD9 /* BaseViewController.swift in Sources */,
 				DE29866E28AC8C0D00250CF0 /* CodeSnap2ViewController.swift in Sources */,
+				DE72164628AF2CF4004BAAD9 /* BlackRadiusTextField.swift in Sources */,
 				DE3ACA7928AB1FD2009F079D /* SceneDelegate.swift in Sources */,
 				DE3ACAB628AB40C0009F079D /* SecondViewController.swift in Sources */,
 				DE29866C28AC822900250CF0 /* CodeSnapViewController.swift in Sources */,
@@ -297,6 +340,7 @@
 				DE29866728AC71B800250CF0 /* CodeViewController.swift in Sources */,
 				DE3ACABC28AB410D009F079D /* WalkThroughViewController.swift in Sources */,
 				DE3ACAB428AB3B00009F079D /* FirstViewController.swift in Sources */,
+				DE72164028AF1447004BAAD9 /* WriteViewController.swift in Sources */,
 				DE531F9128ACFDE40051787D /* CodeBaeminViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

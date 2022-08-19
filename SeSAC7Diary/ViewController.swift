@@ -23,22 +23,40 @@ class ViewController: UIViewController {
         
         view.backgroundColor = .yellow
 
-//        configure()
-//        nameButton.addTarget(self, action: #selector(nameButtonClicked), for: .touchUpInside)
+        configure()
+        nameButton.addTarget(self, action: #selector(nameButtonClicked), for: .touchUpInside)
+        
+        // 2. Notification
+        NotificationCenter.default.addObserver(self, selector: #selector(saveButtonNotificationObserver(notification:)), name: NSNotification.Name("saveButtonNotification"), object: nil)
+    }
+    
+    @objc func saveButtonNotificationObserver(notification: NSNotification) {
+        
+        if let name = notification.userInfo?["name"] as? String {
+            print(name)
+            self.nameButton.setTitle(name, for: .normal)
+        } else {
+            
+        }
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let vc = CodeBaeminViewController() // 인스턴스 생성
-        vc.modalPresentationStyle = .overFullScreen
-        present(vc, animated: true) // 보여주기
+//        let vc = WriteViewController() // 인스턴스 생성
+//        vc.modalPresentationStyle = .overFullScreen
+//        present(vc, animated: true) // 보여주기
     }
     
     @objc func nameButtonClicked() {
+        
+        NotificationCenter.default.post(name: NSNotification.Name("TEST")-, object: nil, userInfo: ["name": "\(Int.random(in: 1...100))", "value": 12345])
+        
         let vc = ProfileViewController()
-        vc.saveButtonActionHandler = {
-            self.nameButton.setTitle(vc.nameTextField.text, for: .normal)
+        
+        vc.saveButtonActionHandler = { name in
+            self.nameButton.setTitle(name, for: .normal)
         }
         
         present(vc, animated: true)
