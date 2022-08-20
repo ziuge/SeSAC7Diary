@@ -229,7 +229,6 @@ class CodeBaeminViewController: UIViewController {
         
         giftView.snp.makeConstraints { make in
             make.topMargin.equalTo(bmartView.snp.bottom).offset(20)
-//            make.leadingMargin.equalTo(view).offset(20)
             make.leading.equalTo(bmartView)
             make.height.equalTo(110)
             let w = Int(view.frame.width / 2) - 35
@@ -238,7 +237,6 @@ class CodeBaeminViewController: UIViewController {
         
         koreaView.snp.makeConstraints { make in
             make.topMargin.equalTo(bmartView.snp.bottom).offset(20)
-//            make.trailingMargin.equalTo(view).offset(-20)
             make.trailing.equalTo(shoppingLiveView)
             make.height.equalTo(110)
             let w = Int(view.frame.width / 2) - 35

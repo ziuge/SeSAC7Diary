@@ -36,7 +36,6 @@ class WriteView: BaseView {
     }()
     
     override func configureUI() {
-        
         [photoImageView, titleTextField, dateTextField, contentTextView].forEach {
             self.addSubview($0)
         }

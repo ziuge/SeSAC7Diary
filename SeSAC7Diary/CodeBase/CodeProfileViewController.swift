@@ -78,7 +78,6 @@ class CodeProfileViewController: UIViewController {
         return view
     }()
     
-    
     // MARK: 하단 버튼
     let chatButton: UIButton = {
         var configuration = UIButton.Configuration.plain()
@@ -118,8 +117,6 @@ class CodeProfileViewController: UIViewController {
         button.tintColor = .white
         return button
     }()
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -216,6 +213,5 @@ class CodeProfileViewController: UIViewController {
         }
         
     }
-
 
 }
