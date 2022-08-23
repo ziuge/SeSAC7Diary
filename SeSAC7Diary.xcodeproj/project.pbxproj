@@ -25,6 +25,19 @@
 		DE3ACAB828AB40CA009F079D /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3ACAB728AB40CA009F079D /* ThirdViewController.swift */; };
 		DE3ACABC28AB410D009F079D /* WalkThroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3ACABB28AB410D009F079D /* WalkThroughViewController.swift */; };
 		DE531F9128ACFDE40051787D /* CodeBaeminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE531F9028ACFDE40051787D /* CodeBaeminViewController.swift */; };
+		DE6333B828B4BF9500DF8680 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333B728B4BF9500DF8680 /* RealmModel.swift */; };
+		DE6333C528B4BFC000DF8680 /* WriteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333BA28B4BFC000DF8680 /* WriteTextField.swift */; };
+		DE6333C628B4BFC000DF8680 /* DiaryImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333BB28B4BFC000DF8680 /* DiaryImageView.swift */; };
+		DE6333C728B4BFC000DF8680 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333BD28B4BFC000DF8680 /* Constants.swift */; };
+		DE6333C828B4BFC000DF8680 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333BE28B4BFC000DF8680 /* Color.swift */; };
+		DE6333C928B4BFC000DF8680 /* ReusableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333BF28B4BFC000DF8680 /* ReusableProtocol.swift */; };
+		DE6333CA28B4BFC000DF8680 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333C128B4BFC000DF8680 /* BaseViewController.swift */; };
+		DE6333CB28B4BFC000DF8680 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333C228B4BFC000DF8680 /* BaseTableViewCell.swift */; };
+		DE6333CC28B4BFC000DF8680 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333C328B4BFC000DF8680 /* BaseCollectionViewCell.swift */; };
+		DE6333CD28B4BFC000DF8680 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333C428B4BFC000DF8680 /* BaseView.swift */; };
+		DE6333CF28B4BFDA00DF8680 /* Transition+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333CE28B4BFDA00DF8680 /* Transition+Extension.swift */; };
+		DE6333D228B4C40200DF8680 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = DE6333D128B4C40200DF8680 /* Realm */; };
+		DE6333D428B4C40200DF8680 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DE6333D328B4C40200DF8680 /* RealmSwift */; };
 		DE72163D28AF1274004BAAD9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE72163C28AF1274004BAAD9 /* BaseViewController.swift */; };
 		DE72164028AF1447004BAAD9 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE72163F28AF1447004BAAD9 /* WriteViewController.swift */; };
 		DE72164228AF169E004BAAD9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE72164128AF169E004BAAD9 /* BaseView.swift */; };
@@ -85,6 +98,25 @@
 		DE3ACAB728AB40CA009F079D /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		DE3ACABB28AB410D009F079D /* WalkThroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughViewController.swift; sourceTree = "<group>"; };
 		DE531F9028ACFDE40051787D /* CodeBaeminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBaeminViewController.swift; sourceTree = "<group>"; };
+		DE6333AC28B4BF7400DF8680 /* ImageSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchViewController.swift; sourceTree = "<group>"; };
+		DE6333AD28B4BF7400DF8680 /* ImageSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchView.swift; sourceTree = "<group>"; };
+		DE6333AE28B4BF7400DF8680 /* ImageDummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDummyData.swift; sourceTree = "<group>"; };
+		DE6333AF28B4BF7400DF8680 /* ImageSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE6333B128B4BF7400DF8680 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
+		DE6333B228B4BF7400DF8680 /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
+		DE6333B428B4BF7400DF8680 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DE6333B528B4BF7400DF8680 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		DE6333B728B4BF9500DF8680 /* RealmModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		DE6333BA28B4BFC000DF8680 /* WriteTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteTextField.swift; sourceTree = "<group>"; };
+		DE6333BB28B4BFC000DF8680 /* DiaryImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryImageView.swift; sourceTree = "<group>"; };
+		DE6333BD28B4BFC000DF8680 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DE6333BE28B4BFC000DF8680 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		DE6333BF28B4BFC000DF8680 /* ReusableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReusableProtocol.swift; path = "../../../SeSAC2DiaryRealm 3/SeSAC2DiaryRealm/Utility/ReusableProtocol.swift"; sourceTree = "<group>"; };
+		DE6333C128B4BFC000DF8680 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DE6333C228B4BFC000DF8680 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		DE6333C328B4BFC000DF8680 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE6333C428B4BFC000DF8680 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		DE6333CE28B4BFDA00DF8680 /* Transition+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Transition+Extension.swift"; path = "../../../SeSAC2DiaryRealm 3/SeSAC2DiaryRealm/Extension/Transition+Extension.swift"; sourceTree = "<group>"; };
 		DE72163C28AF1274004BAAD9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DE72163F28AF1447004BAAD9 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		DE72164128AF169E004BAAD9 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -100,6 +132,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6333D428B4C40200DF8680 /* RealmSwift in Frameworks */,
+				DE6333D228B4C40200DF8680 /* Realm in Frameworks */,
 				DE3ACAA628AB2C6A009F079D /* SeSAC7UIFramework.framework in Frameworks */,
 				DE29866A28AC81B300250CF0 /* SnapKit in Frameworks */,
 			);
@@ -141,6 +175,8 @@
 		DE3ACA7528AB1FD2009F079D /* SeSAC7Diary */ = {
 			isa = PBXGroup;
 			children = (
+				DE6333B628B4BF9500DF8680 /* Realm */,
+				DE63339428B4BF3E00DF8680 /* Scene */,
 				DE72163E28AF141E004BAAD9 /* Diary */,
 				DE72163928AF1258004BAAD9 /* Utility */,
 				DEC8405928ADDEF20072C13F /* Extension */,
@@ -186,9 +222,93 @@
 			path = WalkThrough;
 			sourceTree = "<group>";
 		};
+		DE63339428B4BF3E00DF8680 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				DE6333B328B4BF7400DF8680 /* Home */,
+				DE6333AB28B4BF7400DF8680 /* ImageSearch */,
+				DE6333B028B4BF7400DF8680 /* Write */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		DE6333AB28B4BF7400DF8680 /* ImageSearch */ = {
+			isa = PBXGroup;
+			children = (
+				DE6333AF28B4BF7400DF8680 /* ImageSearchCollectionViewCell.swift */,
+				DE6333AC28B4BF7400DF8680 /* ImageSearchViewController.swift */,
+				DE6333AD28B4BF7400DF8680 /* ImageSearchView.swift */,
+				DE6333AE28B4BF7400DF8680 /* ImageDummyData.swift */,
+			);
+			path = ImageSearch;
+			sourceTree = "<group>";
+		};
+		DE6333B028B4BF7400DF8680 /* Write */ = {
+			isa = PBXGroup;
+			children = (
+				DE6333B128B4BF7400DF8680 /* WriteViewController.swift */,
+				DE6333B228B4BF7400DF8680 /* WriteView.swift */,
+			);
+			path = Write;
+			sourceTree = "<group>";
+		};
+		DE6333B328B4BF7400DF8680 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DE6333B528B4BF7400DF8680 /* HomeTableViewCell.swift */,
+				DE6333B428B4BF7400DF8680 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DE6333B628B4BF9500DF8680 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				DE6333B728B4BF9500DF8680 /* RealmModel.swift */,
+			);
+			name = Realm;
+			path = "../../SeSAC2DiaryRealm 3/SeSAC2DiaryRealm/Realm";
+			sourceTree = "<group>";
+		};
+		DE6333B928B4BFC000DF8680 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				DE6333BA28B4BFC000DF8680 /* WriteTextField.swift */,
+				DE6333BB28B4BFC000DF8680 /* DiaryImageView.swift */,
+			);
+			name = CustomView;
+			path = "../../../SeSAC2DiaryRealm 3/SeSAC2DiaryRealm/Utility/CustomView";
+			sourceTree = "<group>";
+		};
+		DE6333BC28B4BFC000DF8680 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DE6333BD28B4BFC000DF8680 /* Constants.swift */,
+				DE6333BE28B4BFC000DF8680 /* Color.swift */,
+			);
+			name = Constants;
+			path = "../../../SeSAC2DiaryRealm 3/SeSAC2DiaryRealm/Utility/Constants";
+			sourceTree = "<group>";
+		};
+		DE6333C028B4BFC000DF8680 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				DE6333C128B4BFC000DF8680 /* BaseViewController.swift */,
+				DE6333C228B4BFC000DF8680 /* BaseTableViewCell.swift */,
+				DE6333C328B4BFC000DF8680 /* BaseCollectionViewCell.swift */,
+				DE6333C428B4BFC000DF8680 /* BaseView.swift */,
+			);
+			name = BaseView;
+			path = "../../../SeSAC2DiaryRealm 3/SeSAC2DiaryRealm/Utility/BaseView";
+			sourceTree = "<group>";
+		};
 		DE72163928AF1258004BAAD9 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				DE6333C028B4BFC000DF8680 /* BaseView */,
+				DE6333BC28B4BFC000DF8680 /* Constants */,
+				DE6333B928B4BFC000DF8680 /* CustomView */,
+				DE6333BF28B4BFC000DF8680 /* ReusableProtocol.swift */,
 				DE72164728AF2D06004BAAD9 /* Custom */,
 				DE72163C28AF1274004BAAD9 /* BaseViewController.swift */,
 				DE72164128AF169E004BAAD9 /* BaseView.swift */,
@@ -216,6 +336,7 @@
 		DEC8405928ADDEF20072C13F /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DE6333CE28B4BFDA00DF8680 /* Transition+Extension.swift */,
 				DEC8405C28ADDF080072C13F /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
@@ -240,6 +361,8 @@
 			name = SeSAC7Diary;
 			packageProductDependencies = (
 				DE29866928AC81B300250CF0 /* SnapKit */,
+				DE6333D128B4C40200DF8680 /* Realm */,
+				DE6333D328B4C40200DF8680 /* RealmSwift */,
 			);
 			productName = SeSAC7Diary;
 			productReference = DE3ACA7328AB1FD2009F079D /* SeSAC7Diary.app */;
@@ -271,6 +394,7 @@
 			mainGroup = DE3ACA6A28AB1FD2009F079D;
 			packageReferences = (
 				DE29866828AC81B300250CF0 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				DE6333D028B4C40200DF8680 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = DE3ACA7428AB1FD2009F079D /* Products */;
 			projectDirPath = "";
@@ -323,22 +447,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6333CD28B4BFC000DF8680 /* BaseView.swift in Sources */,
 				DED10E8728ACAACC00D9CEAA /* CodeProfileViewController.swift in Sources */,
+				DE6333CC28B4BFC000DF8680 /* BaseCollectionViewCell.swift in Sources */,
 				DEC8405D28ADDF080072C13F /* UIViewController+Extension.swift in Sources */,
 				DE72164428AF179B004BAAD9 /* WriteView.swift in Sources */,
 				DE3ACA7B28AB1FD2009F079D /* ViewController.swift in Sources */,
+				DE6333CB28B4BFC000DF8680 /* BaseTableViewCell.swift in Sources */,
+				DE6333C528B4BFC000DF8680 /* WriteTextField.swift in Sources */,
+				DE6333C828B4BFC000DF8680 /* Color.swift in Sources */,
 				DE72164228AF169E004BAAD9 /* BaseView.swift in Sources */,
+				DE6333C728B4BFC000DF8680 /* Constants.swift in Sources */,
 				DE3ACA7728AB1FD2009F079D /* AppDelegate.swift in Sources */,
 				DEC8405F28ADE5FE0072C13F /* ProfileViewController.swift in Sources */,
 				DE72163D28AF1274004BAAD9 /* BaseViewController.swift in Sources */,
 				DE29866E28AC8C0D00250CF0 /* CodeSnap2ViewController.swift in Sources */,
 				DE72164628AF2CF4004BAAD9 /* BlackRadiusTextField.swift in Sources */,
+				DE6333CA28B4BFC000DF8680 /* BaseViewController.swift in Sources */,
 				DE3ACA7928AB1FD2009F079D /* SceneDelegate.swift in Sources */,
 				DE3ACAB628AB40C0009F079D /* SecondViewController.swift in Sources */,
 				DE29866C28AC822900250CF0 /* CodeSnapViewController.swift in Sources */,
+				DE6333B828B4BF9500DF8680 /* RealmModel.swift in Sources */,
+				DE6333C928B4BFC000DF8680 /* ReusableProtocol.swift in Sources */,
 				DE3ACAB828AB40CA009F079D /* ThirdViewController.swift in Sources */,
 				DE29866728AC71B800250CF0 /* CodeViewController.swift in Sources */,
+				DE6333CF28B4BFDA00DF8680 /* Transition+Extension.swift in Sources */,
 				DE3ACABC28AB410D009F079D /* WalkThroughViewController.swift in Sources */,
+				DE6333C628B4BFC000DF8680 /* DiaryImageView.swift in Sources */,
 				DE3ACAB428AB3B00009F079D /* FirstViewController.swift in Sources */,
 				DE72164028AF1447004BAAD9 /* WriteViewController.swift in Sources */,
 				DE531F9128ACFDE40051787D /* CodeBaeminViewController.swift in Sources */,
@@ -567,6 +702,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		DE6333D028B4C40200DF8680 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -574,6 +717,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DE29866828AC81B300250CF0 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		DE6333D128B4C40200DF8680 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE6333D028B4C40200DF8680 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		DE6333D328B4C40200DF8680 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE6333D028B4C40200DF8680 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
