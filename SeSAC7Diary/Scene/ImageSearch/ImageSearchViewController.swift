@@ -66,8 +66,8 @@ extension SearchImageViewController: UICollectionViewDelegate, UICollectionViewD
             return UICollectionViewCell()
         }
 
-        cell.layer.borderWidth = selectIndexPath == indexPath ? 4 : 0
-        cell.layer.borderColor = selectIndexPath == indexPath ? Constants.BaseColor.point.cgColor : nil
+//        cell.layer.borderWidth = selectIndexPath == indexPath ? 4 : 0
+//        cell.layer.borderColor = selectIndexPath == indexPath ? Constants.BaseColor.point.cgColor : nil
         cell.setImage(data: ImageDummy.data[indexPath.item].url)
 
         return cell
@@ -80,12 +80,12 @@ extension SearchImageViewController: UICollectionViewDelegate, UICollectionViewD
         guard let cell = collectionView.cellForItem(at: indexPath) as? ImageSearchCollectionViewCell else { return }
         
         selectImage = cell.searchImageView.image
-        selectIndexPath = indexPath
+//        selectIndexPath = indexPath
         collectionView.reloadData()
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        selectIndexPath = nil
+//        selectIndexPath = nil
         selectImage = nil
         collectionView.reloadData()
     }

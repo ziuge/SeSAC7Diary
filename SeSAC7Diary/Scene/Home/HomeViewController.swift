@@ -69,6 +69,8 @@ class HomeViewController: BaseViewController {
     }
     
     @objc func sortButtonClicked() {
+        let vc = BackupViewController()
+        transition(vc, transitionStyle: .present)
         tasks = localRealm.objects(UserDiary.self).sorted(byKeyPath: "regdate", ascending: true)
     }
     
