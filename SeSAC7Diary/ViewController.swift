@@ -44,6 +44,10 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+//        let vc = HomeViewController()
+//        vc.modalPresentationStyle = .overFullScreen
+//        present(vc, animated: true)
+        
 //        let vc = WriteViewController() // 인스턴스 생성
 //        vc.modalPresentationStyle = .overFullScreen
 //        present(vc, animated: true) // 보여주기

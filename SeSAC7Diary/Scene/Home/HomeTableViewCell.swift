@@ -64,7 +64,6 @@ class HomeTableViewCell: BaseTableViewCell {
             contentView.addSubview($0)
         }
         
-
     }
     
     override func setConstraints() {
@@ -83,8 +82,5 @@ class HomeTableViewCell: BaseTableViewCell {
             make.trailing.equalTo(diaryImageView.snp.leading).offset(-spacing)
         }
     }
-    
-
-    
     
 }

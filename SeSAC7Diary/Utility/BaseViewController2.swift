@@ -8,11 +8,10 @@
 import UIKit
 import SnapKit
 
-class BaseViewController: UIViewController {
+class BaseViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
         configure()
         setConstraints()
     }

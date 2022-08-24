@@ -38,10 +38,20 @@
 		DE6333CF28B4BFDA00DF8680 /* Transition+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333CE28B4BFDA00DF8680 /* Transition+Extension.swift */; };
 		DE6333D228B4C40200DF8680 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = DE6333D128B4C40200DF8680 /* Realm */; };
 		DE6333D428B4C40200DF8680 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DE6333D328B4C40200DF8680 /* RealmSwift */; };
-		DE72163D28AF1274004BAAD9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE72163C28AF1274004BAAD9 /* BaseViewController.swift */; };
-		DE72164028AF1447004BAAD9 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE72163F28AF1447004BAAD9 /* WriteViewController.swift */; };
-		DE72164228AF169E004BAAD9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE72164128AF169E004BAAD9 /* BaseView.swift */; };
-		DE72164428AF179B004BAAD9 /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE72164328AF179B004BAAD9 /* WriteView.swift */; };
+		DE6333D628B5168400DF8680 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333B428B4BF7400DF8680 /* HomeViewController.swift */; };
+		DE6333D728B5168800DF8680 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333B528B4BF7400DF8680 /* HomeTableViewCell.swift */; };
+		DE6333D828B5168C00DF8680 /* ImageSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333AF28B4BF7400DF8680 /* ImageSearchCollectionViewCell.swift */; };
+		DE6333D928B5168F00DF8680 /* ImageSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333AC28B4BF7400DF8680 /* ImageSearchViewController.swift */; };
+		DE6333DA28B5169100DF8680 /* ImageSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333AD28B4BF7400DF8680 /* ImageSearchView.swift */; };
+		DE6333DB28B5169400DF8680 /* ImageDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333AE28B4BF7400DF8680 /* ImageDummyData.swift */; };
+		DE6333DC28B5169700DF8680 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333B128B4BF7400DF8680 /* WriteViewController.swift */; };
+		DE6333DD28B5169900DF8680 /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333B228B4BF7400DF8680 /* WriteView.swift */; };
+		DE6333E028B5170500DF8680 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DE6333DF28B5170500DF8680 /* Kingfisher */; };
+		DE6333E228B5D27B00DF8680 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333E128B5D27B00DF8680 /* FileManager+Extension.swift */; };
+		DE72163D28AF1274004BAAD9 /* BaseViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE72163C28AF1274004BAAD9 /* BaseViewController2.swift */; };
+		DE72164028AF1447004BAAD9 /* WriteViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE72163F28AF1447004BAAD9 /* WriteViewController2.swift */; };
+		DE72164228AF169E004BAAD9 /* BaseView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE72164128AF169E004BAAD9 /* BaseView2.swift */; };
+		DE72164428AF179B004BAAD9 /* WriteView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE72164328AF179B004BAAD9 /* WriteView2.swift */; };
 		DE72164628AF2CF4004BAAD9 /* BlackRadiusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE72164528AF2CF4004BAAD9 /* BlackRadiusTextField.swift */; };
 		DEC8405D28ADDF080072C13F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC8405C28ADDF080072C13F /* UIViewController+Extension.swift */; };
 		DEC8405F28ADE5FE0072C13F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC8405E28ADE5FE0072C13F /* ProfileViewController.swift */; };
@@ -117,10 +127,11 @@
 		DE6333C328B4BFC000DF8680 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		DE6333C428B4BFC000DF8680 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		DE6333CE28B4BFDA00DF8680 /* Transition+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Transition+Extension.swift"; path = "../../../SeSAC2DiaryRealm 3/SeSAC2DiaryRealm/Extension/Transition+Extension.swift"; sourceTree = "<group>"; };
-		DE72163C28AF1274004BAAD9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		DE72163F28AF1447004BAAD9 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
-		DE72164128AF169E004BAAD9 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
-		DE72164328AF179B004BAAD9 /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
+		DE6333E128B5D27B00DF8680 /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
+		DE72163C28AF1274004BAAD9 /* BaseViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController2.swift; sourceTree = "<group>"; };
+		DE72163F28AF1447004BAAD9 /* WriteViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController2.swift; sourceTree = "<group>"; };
+		DE72164128AF169E004BAAD9 /* BaseView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView2.swift; sourceTree = "<group>"; };
+		DE72164328AF179B004BAAD9 /* WriteView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView2.swift; sourceTree = "<group>"; };
 		DE72164528AF2CF4004BAAD9 /* BlackRadiusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackRadiusTextField.swift; sourceTree = "<group>"; };
 		DEC8405C28ADDF080072C13F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		DEC8405E28ADE5FE0072C13F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +147,7 @@
 				DE6333D228B4C40200DF8680 /* Realm in Frameworks */,
 				DE3ACAA628AB2C6A009F079D /* SeSAC7UIFramework.framework in Frameworks */,
 				DE29866A28AC81B300250CF0 /* SnapKit in Frameworks */,
+				DE6333E028B5170500DF8680 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,8 +322,8 @@
 				DE6333B928B4BFC000DF8680 /* CustomView */,
 				DE6333BF28B4BFC000DF8680 /* ReusableProtocol.swift */,
 				DE72164728AF2D06004BAAD9 /* Custom */,
-				DE72163C28AF1274004BAAD9 /* BaseViewController.swift */,
-				DE72164128AF169E004BAAD9 /* BaseView.swift */,
+				DE72163C28AF1274004BAAD9 /* BaseViewController2.swift */,
+				DE72164128AF169E004BAAD9 /* BaseView2.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -319,8 +331,8 @@
 		DE72163E28AF141E004BAAD9 /* Diary */ = {
 			isa = PBXGroup;
 			children = (
-				DE72163F28AF1447004BAAD9 /* WriteViewController.swift */,
-				DE72164328AF179B004BAAD9 /* WriteView.swift */,
+				DE72163F28AF1447004BAAD9 /* WriteViewController2.swift */,
+				DE72164328AF179B004BAAD9 /* WriteView2.swift */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -338,6 +350,7 @@
 			children = (
 				DE6333CE28B4BFDA00DF8680 /* Transition+Extension.swift */,
 				DEC8405C28ADDF080072C13F /* UIViewController+Extension.swift */,
+				DE6333E128B5D27B00DF8680 /* FileManager+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -363,6 +376,7 @@
 				DE29866928AC81B300250CF0 /* SnapKit */,
 				DE6333D128B4C40200DF8680 /* Realm */,
 				DE6333D328B4C40200DF8680 /* RealmSwift */,
+				DE6333DF28B5170500DF8680 /* Kingfisher */,
 			);
 			productName = SeSAC7Diary;
 			productReference = DE3ACA7328AB1FD2009F079D /* SeSAC7Diary.app */;
@@ -395,6 +409,7 @@
 			packageReferences = (
 				DE29866828AC81B300250CF0 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				DE6333D028B4C40200DF8680 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				DE6333DE28B5170500DF8680 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = DE3ACA7428AB1FD2009F079D /* Products */;
 			projectDirPath = "";
@@ -449,33 +464,42 @@
 			files = (
 				DE6333CD28B4BFC000DF8680 /* BaseView.swift in Sources */,
 				DED10E8728ACAACC00D9CEAA /* CodeProfileViewController.swift in Sources */,
+				DE6333DD28B5169900DF8680 /* WriteView.swift in Sources */,
+				DE6333D628B5168400DF8680 /* HomeViewController.swift in Sources */,
 				DE6333CC28B4BFC000DF8680 /* BaseCollectionViewCell.swift in Sources */,
 				DEC8405D28ADDF080072C13F /* UIViewController+Extension.swift in Sources */,
-				DE72164428AF179B004BAAD9 /* WriteView.swift in Sources */,
+				DE72164428AF179B004BAAD9 /* WriteView2.swift in Sources */,
+				DE6333D928B5168F00DF8680 /* ImageSearchViewController.swift in Sources */,
 				DE3ACA7B28AB1FD2009F079D /* ViewController.swift in Sources */,
+				DE6333DB28B5169400DF8680 /* ImageDummyData.swift in Sources */,
 				DE6333CB28B4BFC000DF8680 /* BaseTableViewCell.swift in Sources */,
 				DE6333C528B4BFC000DF8680 /* WriteTextField.swift in Sources */,
 				DE6333C828B4BFC000DF8680 /* Color.swift in Sources */,
-				DE72164228AF169E004BAAD9 /* BaseView.swift in Sources */,
+				DE72164228AF169E004BAAD9 /* BaseView2.swift in Sources */,
 				DE6333C728B4BFC000DF8680 /* Constants.swift in Sources */,
 				DE3ACA7728AB1FD2009F079D /* AppDelegate.swift in Sources */,
+				DE6333D828B5168C00DF8680 /* ImageSearchCollectionViewCell.swift in Sources */,
 				DEC8405F28ADE5FE0072C13F /* ProfileViewController.swift in Sources */,
-				DE72163D28AF1274004BAAD9 /* BaseViewController.swift in Sources */,
+				DE72163D28AF1274004BAAD9 /* BaseViewController2.swift in Sources */,
 				DE29866E28AC8C0D00250CF0 /* CodeSnap2ViewController.swift in Sources */,
 				DE72164628AF2CF4004BAAD9 /* BlackRadiusTextField.swift in Sources */,
 				DE6333CA28B4BFC000DF8680 /* BaseViewController.swift in Sources */,
 				DE3ACA7928AB1FD2009F079D /* SceneDelegate.swift in Sources */,
+				DE6333E228B5D27B00DF8680 /* FileManager+Extension.swift in Sources */,
 				DE3ACAB628AB40C0009F079D /* SecondViewController.swift in Sources */,
 				DE29866C28AC822900250CF0 /* CodeSnapViewController.swift in Sources */,
 				DE6333B828B4BF9500DF8680 /* RealmModel.swift in Sources */,
+				DE6333DA28B5169100DF8680 /* ImageSearchView.swift in Sources */,
 				DE6333C928B4BFC000DF8680 /* ReusableProtocol.swift in Sources */,
 				DE3ACAB828AB40CA009F079D /* ThirdViewController.swift in Sources */,
 				DE29866728AC71B800250CF0 /* CodeViewController.swift in Sources */,
 				DE6333CF28B4BFDA00DF8680 /* Transition+Extension.swift in Sources */,
 				DE3ACABC28AB410D009F079D /* WalkThroughViewController.swift in Sources */,
 				DE6333C628B4BFC000DF8680 /* DiaryImageView.swift in Sources */,
+				DE6333DC28B5169700DF8680 /* WriteViewController.swift in Sources */,
 				DE3ACAB428AB3B00009F079D /* FirstViewController.swift in Sources */,
-				DE72164028AF1447004BAAD9 /* WriteViewController.swift in Sources */,
+				DE72164028AF1447004BAAD9 /* WriteViewController2.swift in Sources */,
+				DE6333D728B5168800DF8680 /* HomeTableViewCell.swift in Sources */,
 				DE531F9128ACFDE40051787D /* CodeBaeminViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -710,6 +734,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		DE6333DE28B5170500DF8680 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -727,6 +759,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DE6333D028B4C40200DF8680 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		DE6333DF28B5170500DF8680 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE6333DE28B5170500DF8680 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

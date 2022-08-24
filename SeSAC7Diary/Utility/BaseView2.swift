@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class BaseView: UIView {
+class BaseView2: UIView {
     
     // 코드베이스일 때 호출
     override init(frame: CGRect) {

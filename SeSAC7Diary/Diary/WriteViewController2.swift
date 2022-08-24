@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class WriteViewController: BaseViewController {
+class WriteViewController2: BaseViewController {
     
     var mainView = WriteView()
     

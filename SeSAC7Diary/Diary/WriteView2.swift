@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WriteView: BaseView {
+class WriteView2: BaseView {
     
     let photoImageView: UIImageView = {
         let view = UIImageView()

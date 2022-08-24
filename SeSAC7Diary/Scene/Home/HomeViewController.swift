@@ -8,6 +8,7 @@
 import UIKit
 import SnapKit
 import RealmSwift //Realm 1. import
+import MapKit
 
 class HomeViewController: BaseViewController {
     
@@ -18,32 +19,27 @@ class HomeViewController: BaseViewController {
         view.rowHeight = 100
         view.delegate = self
         view.dataSource = self
-        view.register(HomeTableViewCell.self, forCellReuseIdentifier: "cell")
+        view.register(HomeTableViewCell.self, forCellReuseIdentifier: HomeTableViewCell.reuseIdentifier)
         return view
     }()
     
     var tasks: Results<UserDiary>! {
         didSet {
             tableView.reloadData()
-            print("Tasks Changed")
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        try! localRealm.write {
+            localRealm.add(UserDiary(diaryTitle: "gg", diaryContent: "dd", diaryDate: Date(), regdate: Date(), photo: nil))
+        }
+        print()
     }
      
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print(#function)
-        
-        //화면 갱신은 화면 전환 코드 및 생명 주기 실행 점검 필요!
-        //present, overCurrentContext, overFullScreen > viewWillAppear X
-//        tableView.reloadData()
-        
-        //Realm 3. Realm 데이터를 정렬해 tasks 에 담기
-//        tasks = localRealm.objects(UserDiary.self).sorted(byKeyPath: "diaryTitle", ascending: true)
         
         fetchRealm()
     }
@@ -58,6 +54,7 @@ class HomeViewController: BaseViewController {
         
         let sortButton = UIBarButtonItem(title: "정렬", style: .plain, target: self, action: #selector(sortButtonClicked))
         let filterButton = UIBarButtonItem(title: "필터", style: .plain, target: self, action: #selector(filterButtonClicked))
+        navigationItem.leftBarButtonItems = [sortButton, filterButton]
     }
     
     override func setConstraints() {
@@ -68,8 +65,7 @@ class HomeViewController: BaseViewController {
     
     @objc func plusButtonClicked() {
         let vc = WriteViewController()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        transition(vc, transitionStyle: .presentFullScreenNavigation)
     }
     
     @objc func sortButtonClicked() {
@@ -83,6 +79,7 @@ class HomeViewController: BaseViewController {
         // [c] -> 대소문자 상관없이
     }
     
+    
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -92,7 +89,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? HomeTableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.reuseIdentifier) as? HomeTableViewCell else { return UITableViewCell() }
+        cell.diaryImageView.image = loadImageFromDocument(fileName: "\(tasks[indexPath.row].objectId).jpg")
         cell.setData(data: tasks[indexPath.row])
         return cell
     }
@@ -142,6 +140,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         let example = UIContextualAction(style: .normal, title: "예시") { action, view, completionHandler in
             print("example btn clicked")
+            
         }
         
         return UISwipeActionsConfiguration(actions: [favorite, example])
