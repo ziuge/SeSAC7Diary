@@ -28,6 +28,7 @@
 		DE3ACAB828AB40CA009F079D /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3ACAB728AB40CA009F079D /* ThirdViewController.swift */; };
 		DE3ACABC28AB410D009F079D /* WalkThroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3ACABB28AB410D009F079D /* WalkThroughViewController.swift */; };
 		DE531F9128ACFDE40051787D /* CodeBaeminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE531F9028ACFDE40051787D /* CodeBaeminViewController.swift */; };
+		DE5598F928B701690024F181 /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = DE5598F828B701690024F181 /* Zip */; };
 		DE6333B828B4BF9500DF8680 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333B728B4BF9500DF8680 /* RealmModel.swift */; };
 		DE6333C528B4BFC000DF8680 /* WriteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333BA28B4BFC000DF8680 /* WriteTextField.swift */; };
 		DE6333C628B4BFC000DF8680 /* DiaryImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6333BB28B4BFC000DF8680 /* DiaryImageView.swift */; };
@@ -149,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE5598F928B701690024F181 /* Zip in Frameworks */,
 				DE6333D428B4C40200DF8680 /* RealmSwift in Frameworks */,
 				DE6333D228B4C40200DF8680 /* Realm in Frameworks */,
 				DE3ACAA628AB2C6A009F079D /* SeSAC7UIFramework.framework in Frameworks */,
@@ -386,6 +388,7 @@
 				DE6333D128B4C40200DF8680 /* Realm */,
 				DE6333D328B4C40200DF8680 /* RealmSwift */,
 				DE6333DF28B5170500DF8680 /* Kingfisher */,
+				DE5598F828B701690024F181 /* Zip */,
 			);
 			productName = SeSAC7Diary;
 			productReference = DE3ACA7328AB1FD2009F079D /* SeSAC7Diary.app */;
@@ -419,6 +422,7 @@
 				DE29866828AC81B300250CF0 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				DE6333D028B4C40200DF8680 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				DE6333DE28B5170500DF8680 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				DE5598F728B701690024F181 /* XCRemoteSwiftPackageReference "Zip" */,
 			);
 			productRefGroup = DE3ACA7428AB1FD2009F079D /* Products */;
 			projectDirPath = "";
@@ -738,6 +742,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		DE5598F728B701690024F181 /* XCRemoteSwiftPackageReference "Zip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/Zip.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		DE6333D028B4C40200DF8680 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
@@ -761,6 +773,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DE29866828AC81B300250CF0 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		DE5598F828B701690024F181 /* Zip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE5598F728B701690024F181 /* XCRemoteSwiftPackageReference "Zip" */;
+			productName = Zip;
 		};
 		DE6333D128B4C40200DF8680 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;

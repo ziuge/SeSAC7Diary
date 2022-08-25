@@ -5,10 +5,15 @@
 //  Created by CHOI on 2022/08/24.
 //
 
-import Foundation
 import UIKit
 
 extension UIViewController {
+    
+    func documentDirectoryPath() -> URL? {
+        guard let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return nil } // Document 경로
+        return documentDirectory
+    }
+    
     func loadImageFromDocument(fileName: String) -> UIImage? {
         guard let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return nil } // Document 경로
         let fileURL = documentDirectory.appendingPathComponent(fileName) // 세부 경로
@@ -44,4 +49,23 @@ extension UIViewController {
             print("file save error", error)
         }
     }
+    
+    func fetchDocumentZipFile() {
+        do {
+            guard let path = documentDirectoryPath() else { return }
+            
+            let docs = try FileManager.default.contentsOfDirectory(at: path, includingPropertiesForKeys: nil)
+            print("docs: \(docs)")
+            
+            let zip = docs.filter { $0.pathExtension == "zip" }
+            print("zip: \(zip)")
+            
+            let result = zip.map { $0.lastPathComponent }
+            print("result: \(result)")
+            
+        } catch {
+            print("Error")
+        }
+    }
+    
 }

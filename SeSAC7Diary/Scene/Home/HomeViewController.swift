@@ -32,6 +32,8 @@ class HomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        fetchDocumentZipFile()
+        
         try! localRealm.write {
             localRealm.add(UserDiary(diaryTitle: "gg", diaryContent: "dd", diaryDate: Date(), regdate: Date(), photo: nil))
         }
