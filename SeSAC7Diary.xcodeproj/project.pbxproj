@@ -60,6 +60,8 @@
 		DEC8405D28ADDF080072C13F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC8405C28ADDF080072C13F /* UIViewController+Extension.swift */; };
 		DEC8405F28ADE5FE0072C13F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC8405E28ADE5FE0072C13F /* ProfileViewController.swift */; };
 		DED10E8728ACAACC00D9CEAA /* CodeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED10E8628ACAACC00D9CEAA /* CodeProfileViewController.swift */; };
+		DEF2EFD028B8558D0084287F /* UserDiaryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF2EFCF28B8558D0084287F /* UserDiaryRepository.swift */; };
+		DEF2EFD528B861B10084287F /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = DEF2EFD428B861B10084287F /* FSCalendar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +145,7 @@
 		DEC8405C28ADDF080072C13F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		DEC8405E28ADE5FE0072C13F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DED10E8628ACAACC00D9CEAA /* CodeProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeProfileViewController.swift; sourceTree = "<group>"; };
+		DEF2EFCF28B8558D0084287F /* UserDiaryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDiaryRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,7 @@
 				DE6333D228B4C40200DF8680 /* Realm in Frameworks */,
 				DE3ACAA628AB2C6A009F079D /* SeSAC7UIFramework.framework in Frameworks */,
 				DE29866A28AC81B300250CF0 /* SnapKit in Frameworks */,
+				DEF2EFD528B861B10084287F /* FSCalendar in Frameworks */,
 				DE6333E028B5170500DF8680 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				DE6333B728B4BF9500DF8680 /* RealmModel.swift */,
+				DEF2EFCF28B8558D0084287F /* UserDiaryRepository.swift */,
 			);
 			name = Realm;
 			path = "../../SeSAC2DiaryRealm 3/SeSAC2DiaryRealm/Realm";
@@ -389,6 +394,7 @@
 				DE6333D328B4C40200DF8680 /* RealmSwift */,
 				DE6333DF28B5170500DF8680 /* Kingfisher */,
 				DE5598F828B701690024F181 /* Zip */,
+				DEF2EFD428B861B10084287F /* FSCalendar */,
 			);
 			productName = SeSAC7Diary;
 			productReference = DE3ACA7328AB1FD2009F079D /* SeSAC7Diary.app */;
@@ -423,6 +429,7 @@
 				DE6333D028B4C40200DF8680 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				DE6333DE28B5170500DF8680 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				DE5598F728B701690024F181 /* XCRemoteSwiftPackageReference "Zip" */,
+				DEF2EFD328B861B10084287F /* XCRemoteSwiftPackageReference "FSCalendar" */,
 			);
 			productRefGroup = DE3ACA7428AB1FD2009F079D /* Products */;
 			projectDirPath = "";
@@ -515,6 +522,7 @@
 				DE6333DC28B5169700DF8680 /* WriteViewController.swift in Sources */,
 				DE3ACAB428AB3B00009F079D /* FirstViewController.swift in Sources */,
 				DE72164028AF1447004BAAD9 /* WriteViewController2.swift in Sources */,
+				DEF2EFD028B8558D0084287F /* UserDiaryRepository.swift in Sources */,
 				DE6333D728B5168800DF8680 /* HomeTableViewCell.swift in Sources */,
 				DE531F9128ACFDE40051787D /* CodeBaeminViewController.swift in Sources */,
 			);
@@ -766,6 +774,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		DEF2EFD328B861B10084287F /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -793,6 +809,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DE6333DE28B5170500DF8680 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		DEF2EFD428B861B10084287F /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEF2EFD328B861B10084287F /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

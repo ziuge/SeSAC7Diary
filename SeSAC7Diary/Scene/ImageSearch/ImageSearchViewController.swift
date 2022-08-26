@@ -23,6 +23,11 @@ class SearchImageViewController: BaseViewController {
         super.viewDidLoad()
         view.backgroundColor = Constants.BaseColor.background
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
 
     override func configure() {
         mainView.collectionView.delegate = self
