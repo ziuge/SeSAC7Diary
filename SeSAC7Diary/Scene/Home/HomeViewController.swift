@@ -106,8 +106,6 @@ class HomeViewController: BaseViewController {
             //.filter("diaryTitle = '오늘의 일기171'"
         // [c] -> 대소문자 상관없이
     }
-    
-    
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
