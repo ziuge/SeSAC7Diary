@@ -23,7 +23,6 @@ extension UIViewController {
         } else {
             return UIImage(systemName: "star.fill")
         }
-        
     }
     
     func saveImageToDocument(fileName: String, image: UIImage) {
@@ -55,5 +54,4 @@ extension UIViewController {
             print("Error")
         }
     }
-    
 }

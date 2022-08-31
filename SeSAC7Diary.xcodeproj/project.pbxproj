@@ -178,6 +178,16 @@
 			path = CodeBase;
 			sourceTree = "<group>";
 		};
+		DE2E1F4B28BC8D310053FED0 /* Backup */ = {
+			isa = PBXGroup;
+			children = (
+				DE27839128B6809600D11E0A /* BackupViewController.swift */,
+				DE27839728B6846A00D11E0A /* BackupTableViewCell.swift */,
+				DE27839528B680EF00D11E0A /* BackupView.swift */,
+			);
+			path = Backup;
+			sourceTree = "<group>";
+		};
 		DE3ACA6A28AB1FD2009F079D = {
 			isa = PBXGroup;
 			children = (
@@ -252,9 +262,7 @@
 				DE6333B328B4BF7400DF8680 /* Home */,
 				DE6333AB28B4BF7400DF8680 /* ImageSearch */,
 				DE6333B028B4BF7400DF8680 /* Write */,
-				DE27839128B6809600D11E0A /* BackupViewController.swift */,
-				DE27839728B6846A00D11E0A /* BackupTableViewCell.swift */,
-				DE27839528B680EF00D11E0A /* BackupView.swift */,
+				DE2E1F4B28BC8D310053FED0 /* Backup */,
 			);
 			path = Scene;
 			sourceTree = "<group>";

@@ -90,5 +90,4 @@ extension WriteViewController: SelectImageDelegate {
         mainView.userImageView.image = image
         print(#function)
     }
-    
 }
